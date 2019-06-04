@@ -4,3 +4,9 @@ build:
 	docker build -t mukhin/spark-master:$(current_branch) ./master
 	docker build -t mukhin/spark-worker:$(current_branch) ./worker
 	docker build -t mukhin/spark-submit:$(current_branch) ./submit
+
+push:
+	docker push -t mukhin/spark-base:$(current_branch)
+	docker push -t mukhin/spark-master:$(current_branch)
+	docker push -t mukhin/spark-worker:$(current_branch)
+	docker push -t mukhin/spark-submit:$(current_branch)
