@@ -1,1 +1,1 @@
-# Docker images for spark
+Partly based on https://github.com/big-data-europe/docker-spark
